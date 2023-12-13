@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(22, 76, 100);
+}
+
+.main {
+    border: 1px solid white;
+    margin: 20px auto;
+    width: 600px;
+    height: 602px;
+}
+
+.main div {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#red {
+    background-color: red;
+    position: relative;
+    animation: header;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes header {
+    0% {top: -250px;}
+    100% {top: 0px;}
+}
+
+#yellow {
+    opacity: 0;
+    background-color: yellow; 
+    animation: haihtub;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes haihtub {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#green {
+    background-color: green;
+    animation: rotate 2s infinite alternate;
+    animation-duration: 5;
+}
+
+@keyframes rotate {
+    0% {rotate: y 0;}
+    100% {rotate: y 180deg;}
+}
